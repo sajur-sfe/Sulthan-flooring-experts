@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sulthan Flooring Experts – Premium Flooring Solutions, Kerala</title>
+    <meta name="description" content="Over two decades of premium flooring solutions in Kerala. Hardwood, luxury vinyl, tile and more. Contact Sulthan Flooring Experts today.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+<header id="site-header" class="sticky top-0 z-50 header-wood transition-shadow duration-300">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+            <a href="#home" class="flex items-center space-x-3 group">
+                <div class="logo-ring">
+                    <img src="images/logo.jpg" alt="Sulthan Flooring Experts Logo" class="w-14 h-14 object-contain">
+                </div>
+                <div class="leading-tight">
+                    <span class="block text-xl md:text-2xl font-bold text-amber-50 tracking-widest uppercase">Sulthan Flooring Experts</span>
+                    <span class="block text-xs text-amber-300 tracking-[0.2em] uppercase font-light">A Tile Contract Working Company</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-2">
+                <a href="#home"    class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#about"   class="nav-link">About</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-amber-50 p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Open menu">
+                <svg id="icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden overflow-hidden transition-all duration-300">
+            <ul class="flex flex-col space-y-1 pt-3 pb-4 border-t border-amber-800/50 mt-3">
+                <li><a href="#home"     class="mobile-nav-link">Home</a></li>
+                <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li><a href="#gallery"  class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#about"    class="mobile-nav-link">About</a></li>
+                <li><a href="#contact"  class="mobile-nav-link text-amber-300 font-semibold">Contact↗</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home" class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+
+        <div class="text-center mb-14 reveal">
+            <p class="text-sm uppercase tracking-[0.3em] text-terracotta font-semibold mb-4">Est. 2003 · Mundur, Palakkad, Kerala</p>
+            <h2 class="hero-heading mb-6">
+                Crafting Excellence<br><em>Underfoot</em>
+            </h2>
+            <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-wood-medium">
+                For over two decades, Sulthan Flooring Experts has transformed homes and commercial spaces 
+                with premium flooring solutions. From timeless hardwood to contemporary luxury vinyl, 
+                we combine traditional craftsmanship with modern innovation — creating floors that elevate 
+                your space and stand the test of time.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+                <a href="#gallery" class="btn-primary">View Our Work</a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="stats-bar reveal delay-100">
+            <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Flooring Types</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-16 reveal delay-200">
+            <div class="image-card rounded-xl shadow-xl h-72 bg-stone-200">
+                <img src="images/home-1.jpg" alt="Hardwood flooring installation" class="w-full h-full object-cover rounded-xl" loading="lazy">
+            </div>
+            <div class="image-card rounded-xl shadow-xl h-72 bg-stone-200 md:mt-6">
+                <img src="images/home-2.jpg" alt="Modern living room flooring" class="w-full h-full object-cover rounded-xl" loading="lazy">
+            </div>
+            <div class="image-card rounded-xl shadow-xl h-72 bg-stone-200">
+                <img src="images/home-3.jpg" alt="Luxury vinyl flooring" class="w-full h-full object-cover rounded-xl" loading="lazy">
+            </div>
+            <div class="image-card rounded-xl shadow-xl h-72 bg-stone-200 md:mt-6">
+                <img src="images/home-4.jpg" alt="Kitchen flooring design" class="w-full h-full object-cover rounded-xl" loading="lazy">
+            </div>
+            <div class="image-card rounded-xl shadow-xl h-72 bg-stone-200">
+                <img src="images/home-5.jpg" alt="Bedroom flooring" class="w-full h-full object-cover rounded-xl" loading="lazy">
+            </div>
+            <div class="image-card rounded-xl shadow-xl h-72 bg-stone-200 md:mt-6">
+                <img src="images/home-6.jpg" alt="Commercial flooring project" class="w-full h-full object-cover rounded-xl" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="py-20 px-4 services-bg">
+    <div class="container mx-auto max-w-6xl">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">What We Offer</p>
+            <h2 class="section-title">Our Services</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div class="service-card reveal delay-100">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3 class="service-title">Residential Flooring</h3>
+                <p class="service-desc">Transform your home with carefully chosen flooring that matches your lifestyle, taste, and budget — installed with care and precision.</p>
+            </div>
+
+            <div class="service-card reveal delay-200">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3 class="service-title">Commercial Projects</h3>
+                <p class="service-desc">High-traffic solutions for offices, hotels, retail spaces, and more — durable, elegant, and on schedule.</p>
+            </div>
+
+            <div class="service-card reveal delay-300">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3 class="service-title">Durability</h3>
+                <p class="service-desc">Tiles laid with precision tool and equipments — timeless beauty with modern durability.</p>
+            </div>
+
+            <div class="service-card reveal delay-100">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="service-title">Luxury Vinyl (LVT/LVP)</h3>
+                <p class="service-desc">Waterproof, scratch-resistant luxury vinyl tiles and planks — ideal for Kerala's humid climate without sacrificing beauty.</p>
+            </div>
+
+            <div class="service-card reveal delay-200">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 12h16M12 4v16"/></svg>
+                </div>
+                <h3 class="service-title">Tile & Stone</h3>
+                <p class="service-desc">Ceramic, porcelain, marble and natural stone flooring — expertly laid for kitchens, bathrooms, and outdoor spaces.</p>
+            </div>
+
+            <div class="service-card reveal delay-300">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                </div>
+                <h3 class="service-title">Repair & Restoration</h3>
+                <p class="service-desc">Breathing new life into worn or damaged floors — sanding, refinishing, and restoration to like-new condition.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="py-20 px-4 gallery-bg">
+    <div class="container mx-auto max-w-7xl">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="section-title">Our Works</h2>
+        </div>
+
+        <div class="gallery-grid mt-12 reveal">
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200" data-index="0">
+                <img src="images/gallery-1.jpg"  alt="Flooring project 1"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 tall" data-index="1">
+                <img src="images/gallery-2.jpg"  alt="Flooring project 2"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200" data-index="2">
+                <img src="images/gallery-3.jpg"  alt="Flooring project 3"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 medium" data-index="3">
+                <img src="images/gallery-4.jpg"  alt="Flooring project 4"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 medium" data-index="4">
+                <img src="images/gallery-5.jpg"  alt="Flooring project 5"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200" data-index="5">
+                <img src="images/gallery-6.jpg"  alt="Flooring project 6"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 tall" data-index="6">
+                <img src="images/gallery-7.jpg"  alt="Flooring project 7"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200" data-index="7">
+                <img src="images/gallery-8.jpg"  alt="Flooring project 8"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 medium" data-index="8">
+                <img src="images/gallery-9.jpg"  alt="Flooring project 9"  class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200" data-index="9">
+                <img src="images/gallery-10.jpg" alt="Flooring project 10" class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 tall" data-index="10">
+                <img src="images/gallery-11.jpg" alt="Flooring project 11" class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+            <div class="image-card gallery-item rounded-xl shadow-lg bg-stone-200 medium" data-index="11">
+                <img src="images/gallery-12.jpg" alt="Flooring project 12" class="w-full h-full object-cover rounded-xl" loading="lazy">
+                <div class="gallery-overlay"><span>View</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8592;</button>
+    <div class="lightbox-inner">
+        <img id="lightbox-img" src="" alt="Gallery image" class="lightbox-image">
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">&#8594;</button>
+</div>
+
+<section id="about" class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">Who We Are</p>
+            <h2 class="section-title">Our Story</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-14 items-center">
+            <div class="reveal delay-100">
+                <div class="story-text space-y-5">
+                    <p>
+                        Sulthan Flooring Experts was founded in <strong>2003</strong> by Master Craftsman 
+                        <strong>Sajir Sulthan</strong> at his <strong>age of 16</strong>, whose passion for woodworking and meticulous attention 
+                        to detail set the foundation for what would become one of Palakkad's most trusted 
+                        flooring contract companies.
+                    </p>
+                    <p>
+                        Started as a small startup in Mundur,Palakkad, Sajir built a reputation for quality 
+                        that spread by word of mouth across the region. Each project was treated with the 
+                        same care as his own home — and clients noticed.
+                    </p>
+                    <p>
+                        Today, Sulthan Flooring Experts is leading into the path of success with the Founder Sajir, who combine decades of inherited wisdom with modern installation techniques 
+                        and project management expertise. The tools have evolved; the commitment to 
+                        excellence has not.
+                    </p>
+                </div>
+
+                <div class="mt-10 grid grid-cols-2 gap-4">
+                    <div class="value-chip">
+                        <span class="value-dot"></span>
+                        Premium Materials
+                    </div>
+                    <div class="value-chip">
+                        <span class="value-dot"></span>
+                        Expert Installation
+                    </div>
+                    <div class="value-chip">
+                        <span class="value-dot"></span>
+                        Honest Pricing
+                    </div>
+                    <div class="value-chip">
+                        <span class="value-dot"></span>
+                        Very Good Service
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal delay-200">
+                <blockquote class="about-quote">
+                    <div class="quote-mark">"</div>
+                    <p>
+                        A floor is not just a surface — it is the foundation of every memory 
+                        made in a home. We lay each board, tile, and plank as if it were 
+                        beneath our own feet.
+                    </p>
+                    <footer>
+                        <strong>Sajir Sulthan</strong>
+                        <span>Founder, Sulthan Flooring Experts</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-20 px-4 contact-bg">
+    <div class="container mx-auto max-w-4xl">
+        <div class="section-header reveal">
+            <p class="section-eyebrow">Reach Out</p>
+            <h2 class="section-title">Contact Us</h2>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 mb-12 reveal delay-100">
+            <a href="tel:+919847339134" class="contact-info-card">
+                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.08 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                <span class="contact-info-label">Call Us</span>
+                <span class="contact-info-value">+91 98473 39134</span>
+            </a>
+            <a href="https://wa.me/+919847339134" target="_blank" rel="noopener" class="contact-info-card whatsapp">
+                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span class="contact-info-label">WhatsApp</span>
+                <span class="contact-info-value">Chat with us</span>
+            </a>
+            <a href="https://www.instagram.com/sulthan_flooring_experts" target="_blank" rel="noopener" class="contact-info-card instagram">
+                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+                <span class="contact-info-label">Instagram</span>
+                <span class="contact-info-value">@sulthanflooringexperts</span>
+            </a>
+            <div class="contact-info-card">
+                <svg class="contact-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="contact-info-label">Visit Us</span>
+                <span class="contact-info-value">Mundur, Palakkad</span>
+            </div>
+        </div>
+
+        <div class="contact-form-card reveal delay-200">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="botcheck" class="space-y-6">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name <span class="text-terracotta">*</span></label>
+                        <input type="text" id="name" name="name" required class="form-input" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address <span class="text-terracotta">*</span></label>
+                        <input type="email" id="email" name="email" required class="form-input" placeholder="you@example.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number <span class="text-terracotta">*</span></label>
+                    <input type="tel" id="phone" name="phone" required class="form-input" placeholder="Your Phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="enquiry" class="form-label">I'm enquiring about <span class="text-terracotta">*</span></label>
+                    <select id="enquiry" name="enquiry" required class="form-input">
+                        <option value="" disabled selected>Select an option…</option>
+                        <option value="residential">Residential Flooring</option>
+                        <option value="commercial">Commercial Project</option>
+                        <option value="repair">Repair / Restoration</option>
+                        <option value="quote">Just a Price Quote</option>
+                        <option value="other">Something Else</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Tell us about your project</label>
+                    <textarea id="message" name="message" rows="5" class="form-input resize-none" placeholder="Room size, flooring type you have in mind, timeline…"></textarea>
+                </div>
+
+                <div class="text-center pt-2">
+                    <button type="submit" class="btn-submit">
+                        Send Enquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-wood mt-0">
+    <div class="container mx-auto px-4 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            <div>
+                <h3 class="text-2xl font-bold text-amber-50 tracking-widest uppercase mb-1">Sulthan Flooring Experts</h3>
+                <p class="text-amber-300 text-xs tracking-[0.25em] uppercase mb-4">A Tile Contract Working Company</p>
+                <p class="text-amber-200/70 text-sm leading-relaxed">
+                    Premium flooring solutions for homes and businesses across Palakkad since 2003.
+                </p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="space-y-2 mt-4">
+                    <li><a href="#home"     class="footer-link">Home</a></li>
+                    <li><a href="#services" class="footer-link">Services</a></li>
+                    <li><a href="#gallery"  class="footer-link">Gallery</a></li>
+                    <li><a href="#about"    class="footer-link">About Us</a></li>
+                    <li><a href="#contact"  class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Get in Touch</h4>
+                <ul class="space-y-3 mt-4">
+                    <li>
+                        <a href="tel:+919847339134" class="footer-contact-item">
+                            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.08 1.18 2 2 0 012.08 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            +91 98473 39134
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+919847339134" target="_blank" rel="noopener" class="footer-contact-item">
+                            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/sulthan_flooring_experts" target="_blank" rel="noopener" class="footer-contact-item">
+                            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-linecap="round"/></svg>
+                            @sulthanflooringexperts
+                        </a>
+                    </li>
+                    <li class="footer-contact-item cursor-default">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Mundur,Palakkad, Kerala, India
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-amber-800/50 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-amber-200/60 text-xs">
+            <p>© 2026 Sulthan Flooring Experts. All rights reserved.</p>
+            <p>Made with ❤️ by <span class="text-amber-300 font-semibold"><strong> Winewood Devs</strong></span></p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://www.instagram.com/sulthan_flooring_experts" target="_blank" rel="noopener"
+   class="instagram-fab" aria-label="Follow Us on Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-linecap="round"/>
+    </svg>
+    <span class="fab-label">Follow us on Instagram</span>
+</a>
+
+<a href="https://wa.me/+919847339134?text=Hello%2C+I%27d+like+to+enquire+about+flooring+solutions."
+   target="_blank" rel="noopener"
+   class="whatsapp-fab" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="fab-label">Chat with us in Whatsapp</span>
+</a>
+
+<script>
+    /* ---- Mobile menu ---- */
+    const mobileBtn  = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen   = document.getElementById('icon-open');
+    const iconClose  = document.getElementById('icon-close');
+
+    mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        iconOpen.classList.toggle('hidden',  !isHidden);
+        iconClose.classList.toggle('hidden', isHidden);
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+            iconClose.classList.add('hidden');
+        });
+    });
+
+    /* ---- Header shadow on scroll ---- */
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+
+    /* ---- Scroll reveal ---- */
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('revealed');
+                revealObserver.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* ---- Lightbox ---- */
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+    const lightbox     = document.getElementById('lightbox');
+    const lbImg        = document.getElementById('lightbox-img');
+    let currentIndex   = 0;
+
+    function openLightbox(index) {
+        currentIndex = index;
+        const img = galleryItems[index].querySelector('img');
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = '';
+        lbImg.src = '';
+    }
+
+    function navigateLightbox(dir) {
+        currentIndex = (currentIndex + dir + galleryItems.length) % galleryItems.length;
+        const img = galleryItems[currentIndex].querySelector('img');
+        lbImg.classList.add('lb-fade');
+        setTimeout(() => {
+            lbImg.src = img.src;
+            lbImg.alt = img.alt;
+            lbImg.classList.remove('lb-fade');
+        }, 150);
+    }
+
+    galleryItems.forEach((item, i) => {
+        item.addEventListener('click', () => openLightbox(i));
+        item.style.cursor = 'pointer';
+    });
+
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox-prev').addEventListener('click', () => navigateLightbox(-1));
+    document.getElementById('lightbox-next').addEventListener('click', () => navigateLightbox(1));
+
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+    document.addEventListener('keydown', e => {
+        if (lightbox.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft')  navigateLightbox(-1);
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+    });
+</script>
+</body>
+</html>
