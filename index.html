@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-800">
+<div id="loader" class="fixed inset-0 z-[10000] flex flex-col items-center justify-center transition-opacity duration-700" style="background: linear-gradient(160deg, #F5EFE7 0%, #EDE7DC 100%);">
+    <div class="logo-ring mb-6 animate-pulse" style="width: 80px; height: 80px;">
+        <img src="images/logo.jpg" alt="Loading..." class="w-16 h-16 object-contain">
+    </div>
+    <div class="flex space-x-3">
+        <div class="w-3 h-3 rounded-full animate-bounce" style="background-color: #C0694E; animation-delay: 0s;"></div>
+        <div class="w-3 h-3 rounded-full animate-bounce" style="background-color: #5D4037; animation-delay: 0.15s;"></div>
+        <div class="w-3 h-3 rounded-full animate-bounce" style="background-color: #3E2723; animation-delay: 0.3s;"></div>
+    </div>
+</div>
 
 <header id="site-header" class="sticky top-0 z-50 header-wood transition-shadow duration-300">
     <div class="container mx-auto px-4 py-3">
@@ -596,6 +606,17 @@
             });
         });
     }
+    /* ---- Loading Screen ---- */
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        // Add a tiny delay so the user actually sees the premium loader
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 700); // Matches the CSS duration-700
+        }, 500); 
+    });
 </script>
 </body>
 </html>
