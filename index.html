@@ -412,43 +412,54 @@
     </div>
 </footer>
 
+
 <script>
-    // Loader Script
-    window.addEventListener('load', () => {
-        const loader = document.getElementById('loader');
-        if (loader) {
-            setTimeout(() => {
-                loader.style.opacity = '0';
-                setTimeout(() => { loader.style.display = 'none'; }, 700);
-            }, 500);
+    document.addEventListener("DOMContentLoaded", () => {
+        // 1. Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+
+        if(btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                iconOpen.classList.toggle('hidden');
+                iconClose.classList.toggle('hidden');
+            });
+        }
+
+        // 2. Cloudflare-Safe Scroll Reveal
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        // Failsafe: Force elements to show immediately if the observer is blocked
+        if (typeof IntersectionObserver !== 'undefined') {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealElements.forEach(el => revealObserver.observe(el));
+        } else {
+            revealElements.forEach(el => el.classList.add('active'));
         }
     });
 
-    // Mobile Menu Script
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const iconOpen = document.getElementById('icon-open');
-    const iconClose = document.getElementById('icon-close');
-
-    if(btn && menu) {
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            iconOpen.classList.toggle('hidden');
-            iconClose.classList.toggle('hidden');
-        });
+    // 3. Bulletproof Loader (with an emergency 3-second failsafe)
+    function hideLoader() {
+        const loader = document.getElementById('loader');
+        if (loader && loader.style.display !== 'none') {
+            loader.style.opacity = '0';
+            setTimeout(() => { loader.style.display = 'none'; }, 700);
+        }
     }
-
-    // Scroll Reveal Script
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-            }
-        });
-    }, { threshold: 0.1 });
     
-    revealElements.forEach(el => revealObserver.observe(el));
+    window.addEventListener('load', hideLoader);
+    
+    // If an image hangs and stops window.load on Cloudflare, this forces the loader away anyway
+    setTimeout(hideLoader, 3000); 
 </script>
 </body>
 </html>
